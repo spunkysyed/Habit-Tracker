@@ -14,11 +14,15 @@ To run this application on your local machine, please follow these steps:
    ```bash
     npm install
 
-3. Start the application:
+3. Create a .env file and store:
+   ```bash
+   MONGODB_URL=<MongoDB atlas connection string>
+
+4. Start the application:
    ```bash
    npm start
 
-4. Open the application:
+5. Open the application:
    ```bash
     http://localhost:4000
 
