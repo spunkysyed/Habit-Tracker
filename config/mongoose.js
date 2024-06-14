@@ -3,8 +3,8 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 // Connection to the database
-const connectToMongodb = () => {
-  mongoose.connect(process.env.MONGODB_URL);
+const connectToMongodb =async () => {
+  await mongoose.connect(process.env.MONGODB_URL);
   console.log("Connection to MongoDb Successfull")
 };
 
