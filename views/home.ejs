@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="/css/home.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<h1 id="slogan">Daily <span>Actions</span>, Lifetime <span>Changes</span></h1>
+
+        <div id="search-div">
+            <form action="/createHabit" method="post" id="type-form">
+                <input type="text" id="custom_meal" name="custom_meal" placeholder="Enter your habit" required>
+                <button type="submit" id="add-custom-meal">Add Habit</button>
+            </form>
+            <button type="button" id="weekly-view"><a href="/weeklyView">Show Weekly View</a></button>
+        </div>
+        <div id="habits-container">
+        <div id="habits-div">
+            <%for(let habit of habits){%>
+                <div id="user-habits">
+
+                    <%for(let habitstatus of habit.status){%>
+                            <%if(habitstatus.date==currdate){%>
+                                <%var status=habitstatus.datestatus%>
+                            <%break}}%>
+                    
+                    <h4><%=habit.name%></h4>
+                    
+                    <div id="habit-status-container">
+                      <div class="habit-status">
+                        <label>
+                          <input type="radio" name="habit-status-<%= habit._id %>" value="None" <% if (status === "None") { %>checked<% } %>>
+                          None
+                        </label>
+                        <label>
+                          <input type="radio" name="habit-status-<%= habit._id %>" value="Done" <% if (status === "Done")  { %>checked<% } %>>
+                          Done
+                        </label>
+                        <label>
+                          <input type="radio" name="habit-status-<%= habit._id %>" value="Not Done" <% if (status === "Not Done") { %>checked<% } %>>
+                          Not Done
+                        </label>
+                      </div>
+                    <button type="button" id="<%=habit._id%>"><a href="/deleteHabit/<%=habit._id%>"><span>&#10006;</span></a></button>
+                    </div>
+                </div>
+                <hr style="border-color: blueviolet;">
+            <%}%>
+            
+        </div>
+    </div>
+        <script src="/js/home.js"></script>
+          
+          
+          
+          
+          
+          
+          

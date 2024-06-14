@@ -1,0 +1,31 @@
+{
+  "name": "habit-tracker",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Habit Tracker project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "nodemon index.js",
+    "cron-job": "node ./assets/js/newDayupdate.js",
+    "start": "npm-run-all --parallel start-server "
+  },
+  "keywords": [
+    "Habit",
+    "tracker"
+  ],
+  "author": "Syed",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "mongodb": "^6.7.0",
+    "mongoose": "^7.3.0",
+    "node-cron": "^3.0.2",
+    "nodemon": "^3.1.3",
+    "npm-run-all": "^4.1.5",
+    "vercel": "^34.2.7"
+  }
+}

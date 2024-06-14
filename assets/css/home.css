@@ -1,0 +1,184 @@
+*{
+  font-family: Rimouski;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* Slogan Styling */
+#slogan{
+  color: gray;
+  font-size: 3rem;
+  word-spacing: 5px;
+}
+
+#slogan span{
+  color:blueviolet;
+  font-style: italic;
+}
+
+/* Styling for search bar and add button */
+
+#search-div {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
+}
+#search-div form {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-div form input {
+  height: 33%;
+  width: 70%;
+  margin-right: 3%;
+  font-size: 17px;
+  padding-left: 5%;
+  border-radius: 50px;
+  border-color: blueviolet;
+  color: blueviolet;
+}
+#search-div form button {
+  width: 30%;
+  height: 35%;
+  font-size: 15px;
+  border-radius: 50px;
+  background-color: blueviolet;
+  border: none;
+  color: white;
+  margin-right: 4%;
+  cursor: pointer;
+}
+
+#search-div form button:hover{
+  background-color: rgb(104, 39, 164);
+}
+
+/* Styling for weekly Button */
+
+#weekly-view {
+  width: 12%;
+  height: 32%;
+  font-size: 15px;
+  border-radius: 50px;
+  background-color: #37737E;
+  border: none;
+  margin-right: 4%;
+  background-color: gray;
+  cursor: pointer;
+}
+
+#weekly-view:hover{
+  background-color: rgb(95, 95, 95);
+}
+
+#weekly-view a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Styling for Habits container */
+#habits-container{
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+}
+
+#habits-div {
+  width: 70%;
+  border-radius: 20px;
+  overflow-y: auto;
+}
+#user-habits {
+  width: 98%;
+  background-color: white;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: gray;
+}
+
+
+/* ScrollBar for Habits Container */
+
+#habits-div::-webkit-scrollbar {
+  width: 8px; 
+}
+
+#habits-div::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+#habits-div::-webkit-scrollbar-thumb {
+  background: blueviolet; 
+  border-radius: 10px; 
+}
+
+#habits-div::-webkit-scrollbar-thumb:hover {
+  background: rgb(104, 39, 164); 
+}
+
+
+/* Styling for every Indiviual Habits */
+#user-habits h4 {
+  width: 70%;
+  margin-right: 20%;
+  font-size: 20px;
+  color: blueviolet;
+  text-transform: uppercase;
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 0;
+  font-style: italic;
+}
+
+#habit-status-container{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: white;
+  border-radius: 10px;
+
+}
+
+.habit-status{
+  width: 80%;
+  border-right: 1px solid black;
+}
+
+#user-habits button {
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+#user-habits button:hover a{
+  background-color: blueviolet;
+  color: white;
+}
+#user-habits a {
+  color: blueviolet;
+  text-decoration: none;
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
