@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var status = this.value;
             
             // Sending the updated status to the server
-            window.location.href = `http://localhost:4000/toggleStatus?id=${habitId}&status=${status}`;
+            window.location.href = `https://habit-tracker-spnr.onrender.com/toggleStatus?id=${habitId}&status=${status}`;
         });
     });
 });
